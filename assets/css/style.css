@@ -684,6 +684,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 @media (min-width: 768px) {
   .hero .hero-title {
