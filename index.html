@@ -23,6 +23,26 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Fontawesome CDN -->
+   <!-- update any styles .js files you have linked -->
+   <script defer src="assets/fontawesome/js/solid.js"></script>
+   <script defer src="assets/fontawesome/js/brands.js"></script>
+
+   <style>
+    .fontcustom-size {
+      font-size: 0.8em; /* Fontawesome size custom */
+    }
+  </style>
+
+   <!-- update the core fontawesome.js file -->
+   <script defer src="assets/fontawesome/js/fontawesome.js"></script>
+
+   <style>
+    .text-csize {
+      font-size: 0.8em; /* H6 size custom */
+    }
+   </style>
+
   <!-- =======================================================
   * Author: RJ GONATO
   * Based : Ph
@@ -73,14 +93,15 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/setup_2024v1.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Hello, I am RJ GONATO</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="A Daddy, A Developer, A Designer, A Freelancer, A Security Researcher, A Server Admin"></span></p>
+          <h1 class="hero-title mb-4">Hello, I am RJ GONATO 
+          </h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="A Daddy, A Developer, A Designer, A Freelancer, A Bug Hunter, A Server Admin"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -307,7 +328,8 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)"> -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url()">
       <div class="overlay-mf"></div>
       <div class="container position-relative">
         <div class="row">
@@ -375,7 +397,65 @@
             </div>
           </div>
         </div>
+
         <div class="row">
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/sotam2.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/sotam2.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">State-of-the-art-mailer</h2>
+                    <h6 class="text-csize">Full Stack Developer and Server Admin</h6>
+                    <div class="w-more">
+                      <span class="w-date">State-of-the-art-mailer.com - An email marketing website that was released on March 30, 2010</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-html5"></i></span> 
+                    </div>
+                  </div>
+                  <!-- <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://state-of-the-art-mailer.com"> <i class="fa-solid fa-arrow-right fontcustom-size"></i></a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/bob.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/bob.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Buckets-of-Banners</h2>
+                    <h6 class="text-csize">Full Stack Developer and Server Admin</h6>
+                    <div class="w-more">
+                      <span class="w-date">BucketsofBanners.com - A unique banner adverstisng website that was launched on Feb 04, 2010</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-html5"></i> </span> 
+                    </div>
+                  </div>
+                  <!-- <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://bucketsofbanners.com"> <i class="fa-solid fa-arrow-right fontcustom-size"></i></a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/moneymc.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
@@ -386,20 +466,24 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Money MCS </h2>
+                    <h2 class="w-title">Moneymcs </h2>
+                    <h6 class="text-csize">Lead Full Stack Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">PHP / MySQL / Bootstrap / Lightsail AWS </span> - <span class="w-date">Money MC LLC Subscribers and Affiliate Web App</span>
+                      <span class="w-date">Joinoneymcs.com- A Subscriber and Affiliate Web App</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-aws"></i> </span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-arrow-right-square"></span></a>
+                      <a href="https://joinmoneymcs.com"> <i class="fa-solid fa-arrow-right fontcustom-size"></i></a>
                     </div>
                   </div> -->
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/work-451.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
@@ -410,9 +494,12 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">E-Listing Eleksyon 2022</h2>
+                    <h2 class="w-title">EListing Eleksyon 2022</h2>
+                    <h6 class="text-csize">Full Stack Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">PHP / MySQL / Bootstrap</span> - <span class="w-date">Electronic Listing Web App</span>
+                      <span class="w-date">Web-based - An Electronic Voters List Web App</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> </span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -435,9 +522,12 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">LGU-Isabel</h2>
+                    <h2 class="w-title">LGU Isabel</h2>
+                    <h6 class="text-csize">Full Stack Developer / IT Specialist</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">Wordpress / MySQL / GoDaddy / SSL</span> - <span class="w-date">Official Website</span>
+                     <span class="w-date">Isabelleyte.com - The Official Website for LGU Isabel, Leyte for the year 2020-2023</span>
+                     <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-aws"></i> <i class="fa-brands fa-expeditedssl"></i> <i class="fa-solid fa-user-secret"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -460,9 +550,12 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Keepsafe Isabel (QR Code Contact Tracing App)</h2>
+                    <h2 class="w-title">Keepsafe App</h2>
+                    <h6 class="text-csize">App Creator and Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">Android / HTML5 or ReactJS / Firebase/ Bootstrap / GoDaddy</span> - <span class="w-date">Android App</span>
+                      <span class="w-date">Isabelleyte.com/keepsafeapp - A mobile application for Contact Tracing of a COVID 19 patient using a QR Code for Isabel, Leyte</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-android"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-react"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-google"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i> <i class="fa-brands fa-google-drive"></i> <i class="fa-solid fa-location-dot"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -486,8 +579,11 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">COVID-19 Admission</h2>
+                    <h6 class="text-csize">Web App Creator and Full Stack Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">PHP / MySQL / Bootstrap</span> - <span class="w-date">Web Management System</span>
+                      <span class="w-date">Web-based - A COVID 19 Admission Web Management Portal System for the Balik Probinsya Program</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -510,9 +606,12 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Graphene v1.0</h2>
+                    <h2 class="w-title">Graphene (ERP)</h2>
+                    <h6 class="text-csize">Full Stack Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">PHP / MySQL / Bootstrap / CodeIgniter</span> - <span class="w-date">Enterprise Resource Planning System</span>
+                      <span class="w-date">Web-based - A system include tools and process for various business functions such as HR, Accounting and Services.</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span>
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -536,8 +635,11 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">COVID-19 Tracker</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">PHP / MySQL / Bootstrap</span> - <span class="w-date">Web Tracker / Information System</span>
+                    <h6 class="text-csize">Web App Creator and Full Stack Developer</h6>
+                    <div class="w-more">       
+                      <span class="w-date">Web-based - A Web Tracker / Information System for all barangays in Isabel, Leyte</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -560,14 +662,17 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Fastware.ph</h2>
+                    <h2 class="w-title">Fastware</h2>
+                    <h6 class="text-csize">Full Stack Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">HTML5 / Botstrap / GoDaddy</span> - <span class="w-date">Website</span>
+                      <span class="w-date">Fastware.ph - A corporate website of a company from Cebu City</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-arrow-right-square"></span></a>
+                      <a href="https://fastware.ph"> <i class="fa-solid fa-arrow-right fontcustom-size"></i></a>
                     </div>
                   </div> -->
                 </div>
@@ -585,9 +690,12 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">TrimChallenge App - A corporate health platform</h2>
+                    <h2 class="w-title">TrimChallenge</h2>
+                    <h6 class="text-csize">Full Stack .Net Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">.Net / Xamarin / Google Playstore </span> - <span class="w-date">Multi Platform App</span>
+                      <span class="w-date">Xamarin Based App - A multi platform corporate health perfomance app</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-android"></i> <i class="fa-brands fa-microsoft"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-react"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-google"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -610,9 +718,12 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">JAMELS CELLSHOP</h2>
+                    <h2 class="w-title">Jamels Cellshop</h2>
+                    <h6 class="text-csize">Full Stack Developer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">PHP / MySQL / HTML5 / CSS / JQUERY</span> - <span class="w-date">Web Inventory System</span>
+                      <span class="w-date">Web-based - A Web Inventory System for a Smartphone Shop in Baybay City</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -636,8 +747,11 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">Admin CPanel</h2>
+                    <h6 class="text-csize">UI and UX Developer </h6>
                     <div class="w-more">
-                      <span class="w-ctegory">HTML5 / CSS / JQUERY</span> - <span class="w-date">Google Material Design Dashboard</span>
+                      <span class="w-date">Web-based - A zero to hero custom built from Google Material Design kit</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span>
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -649,6 +763,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="work-box">
               <a href="https://testsite394181447.wordpress.com/" target="_blank">
@@ -659,15 +774,18 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Product Landing Test Site</h2>
+                    <h2 class="w-title">Product Landing Design</h2>
+                    <h6 class="text-csize">Wordpress Developer</h6>
                     <div class="w-more">
-                      <h6 class="w-ctegory">testsite394181447.wordpress.com</h6>
-                      <span class="w-ctegory">Wordpress</span> - <span class="w-date">Website</span>
+                      <!-- <h6 class="w-ctegory">testsite394181447.wordpress.com</h6> -->
+                     <span class="w-date">Testsite394181447.wordpress.com - A custom build from a Worpress Website</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-wordpress"></i> <i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span>
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="https://testsite394181447.wordpress.com/" target="_blank"> <span class="bi bi-arrow-right-square"></span></a>
+                      <a href="https://testsite394181447.wordpress.com/" target="_blank"> <i class="fa-solid fa-globe"></i></a>
                     </div>
                   </div> -->
                 </div>
@@ -685,15 +803,18 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Complete ECommerce Test Site</h2>
+                    <h2 class="w-title">Complete ECommerce</h2>
+                    <h6 class="text-csize">WIX Developer</h6>
                     <div class="w-more">
-                      <h6 class="w-ctegory">rjaygonato19.wixsite.com/test-wix-site</h6>
-                      <span class="w-ctegory">WIX</span> - <span class="w-date">Website</span>
+                      <!-- <h6 class="w-ctegory">rjaygonato19.wixsite.com/test-wix-site</h6> -->
+                     <span class="w-date">Rjaygonato19.wixsite.com/test-wix-site - An ECommerce Website built from WIX platform</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-wix"></i> <i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span>
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="https://testsite394181447.wordpress.com/" target="_blank"> <span class="bi bi-arrow-right-square"></span></a>
+                      <a href="https://rjaygonato19.wixsite.com/test-wix-site" target="_blank"> <i class="fa-solid fa-globe"></i></a>
                     </div>
                   </div> -->
                 </div>
@@ -712,14 +833,17 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title">Sending SMS Portal</h2>
+                    <h6 class="text-csize">Web Creator and Developer</h6>
                     <div class="w-more">
-                      <h6 class="w-ctegory">sendingsms.site44.com</h6>
-                      <span class="w-ctegory">Php / Site44</span>  -<span class="w-date">Website</span>
+                      <!-- <h6 class="w-ctegory">sendingsms.site44.com</h6> -->
+                      <span class="w-date">Sendingsms.site44.com - An online from the scratch website used for texting for free.</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-php"></i> <i class="fa-brands fa-js"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-solid fa-wrench"></i> <i class="fa-brands fa-expeditedssl"></i> <i class="fa-brands fa-dropbox"></i></span>
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="https://testsite394181447.wordpress.com/" target="_blank"> <span class="bi bi-arrow-right-square"></span></a>
+                      <a href="https://sendingsms.site44.com" target="_blank"> <i class="fa-solid fa-globe"></i></a>
                     </div>
                   </div> -->
                 </div>
@@ -737,9 +861,12 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">POC Brown and Proud</h2>
+                    <h2 class="w-title">Brown and Proud App</h2>
+                    <h6 class="text-csize">.Net Designer</h6>
                     <div class="w-more">
-                      <span class="w-ctegory">Xamarin / .Net</span> - <span class="w-date">Android App</span>
+                     <span class="w-date">Xamarin Based App - A proof of concept multi platform web app for the Brown and Proud launching even in Cebu City</span>
+                      <br>
+                      <span class="w-ctegory"><i class="fa-brands fa-android"></i> <i class="fa-brands fa-microsoft"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-react"></i> <i class="fa-solid fa-database"></i> <i class="fa-brands fa-google"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-expeditedssl"></i></span> 
                     </div>
                   </div>
                   <!-- <div class="col-sm-4">
@@ -925,7 +1052,8 @@
     <!-- End Blog Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <!-- <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)"> -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url()"></section>
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="row">
