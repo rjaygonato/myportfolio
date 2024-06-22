@@ -1177,15 +1177,16 @@
   <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.0/dist/purecounter_vanilla.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const counterElement = document.querySelector('.counter.purecounter');
-        const endValue = parseInt(counterElement.getAttribute('data-purecounter-end'));
+        // Initialize PureCounter
+        new PureCounter();
 
-        // Wait for the counter to finish
+        // After 1 second (matching the counter duration), append the "+" sign
         setTimeout(() => {
-            counterElement.textContent = `${endValue}+`;
-        }, 1000); // 1000ms = 1 second, matching the duration of the counter
+            const counterElement = document.querySelector('.counter.purecounter');
+            counterElement.textContent = `${counterElement.textContent}+`;
+        }, 1000); // Adjust the timeout duration if your counter duration differs
     });
-</script>
+  </script>
 
 </body>
 
