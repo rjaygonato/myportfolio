@@ -339,7 +339,7 @@
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"> <i class="fa-solid fa-plus"></i></p>
                 <span class="counter-text">WORKS COMPLETED</span>
               </div>
             </div>
@@ -361,7 +361,7 @@
                 <span class="ico-circle"><i class="bi bi-people"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"> <i class="fa-solid fa-plus"></i></p>
                 <span class="counter-text">TOTAL CLIENTS</span>
               </div>
             </div>
@@ -372,7 +372,7 @@
                 <span class="ico-circle"><i class="bi bi-award"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="counter purecounter"> <i class="fa-solid fa-plus"></i></p>
                 <span class="counter-text">CERTIFICATIONS</span>
               </div>
             </div>
@@ -1172,29 +1172,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Custom Script to Append "+" -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.0/dist/purecounter_vanilla.js"></script> -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Initialize PureCounter
-        new PureCounter();
-
-        const counterElement = document.querySelector('.counter.purecounter');
-
-        // Create an observer instance linked to the callback function
-        const observer = new MutationObserver(function(mutationsList, observer) {
-            // Check if the text content has reached the end value
-            if (counterElement.textContent == '30') {
-                counterElement.textContent = '30+';
-                observer.disconnect(); // Stop observing after the desired change is made
-            }
-        });
-
-        // Start observing the target element for configured mutations
-        observer.observe(counterElement, { childList: true });
-    });
-  </script>
 
 </body>
 
