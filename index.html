@@ -339,7 +339,7 @@
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"> +</p>
+                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"></p>
                 <span class="counter-text">WORKS COMPLETED</span>
               </div>
             </div>
@@ -361,7 +361,7 @@
                 <span class="ico-circle"><i class="bi bi-people"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"> +</p>
+                <p data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="counter purecounter"></p>
                 <span class="counter-text">TOTAL CLIENTS</span>
               </div>
             </div>
@@ -372,7 +372,7 @@
                 <span class="ico-circle"><i class="bi bi-award"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="counter purecounter"> +</p>
+                <p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="counter purecounter"></p>
                 <span class="counter-text">CERTIFICATIONS</span>
               </div>
             </div>
@@ -1172,6 +1172,20 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Custom Script to Append "+" -->
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.0/dist/purecounter_vanilla.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const counterElement = document.querySelector('.counter.purecounter');
+        const endValue = parseInt(counterElement.getAttribute('data-purecounter-end'));
+
+        // Wait for the counter to finish
+        setTimeout(() => {
+            counterElement.textContent = `${endValue}+`;
+        }, 1000); // 1000ms = 1 second, matching the duration of the counter
+    });
+</script>
 
 </body>
 
