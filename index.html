@@ -1180,11 +1180,19 @@
         // Initialize PureCounter
         new PureCounter();
 
-        // After 1 second (matching the counter duration), append the "+" sign
-        setTimeout(() => {
-            const counterElement = document.querySelector('.counter.purecounter');
-            counterElement.textContent = `${counterElement.textContent}+`;
-        }, 1000); // Adjust the timeout duration if your counter duration differs
+        const counterElement = document.querySelector('.counter.purecounter');
+
+        // Create an observer instance linked to the callback function
+        const observer = new MutationObserver(function(mutationsList, observer) {
+            // Check if the text content has reached the end value
+            if (counterElement.textContent == '30') {
+                counterElement.textContent = '30+';
+                observer.disconnect(); // Stop observing after the desired change is made
+            }
+        });
+
+        // Start observing the target element for configured mutations
+        observer.observe(counterElement, { childList: true });
     });
   </script>
 
