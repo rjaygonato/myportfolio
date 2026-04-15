@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MY PORTFOLIO by RJ GONATO</title>
-  <meta content="The compilation of all of RJ Gonato's work may be seen on his portfolio." name="description">
-  <meta content="RJ Gonato, RJ, Gonato, My Portfolio" name="keywords">
-  <meta http-equiv="refresh" content="260">
+  <title>RJ Gonato - Full-Stack Web Developer | React, Firebase, Node.js</title>
+  <meta
+    content="Full-Stack Web Developer specializing in React, Firebase, Node.js, and scalable web applications. Available for full-time roles. View RJ Gonato's portfolio and projects."
+    name="description">
+  <meta content="RJ Gonato, Full-Stack Developer, React Developer, Web Developer, Firebase, Node.js, Portfolio"
+    name="keywords">
+  <!-- <meta http-equiv="refresh" content="260"> -->
 
   <!-- Favicons -->
   <link href="assets/img/letter-r.png" rel="icon">
@@ -29,6 +32,53 @@
   <script defer src="assets/fontawesome/js/brands.js"></script>
 
   <style>
+    .hero-description {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent-color);
+      color: white;
+      border: 2px solid var(--accent-color);
+    }
+
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--accent-color);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: var(--dark-color);
+    }
+
     .fontcustom-size {
       font-size: 0.8em;
       /* Fontawesome size custom */
@@ -37,6 +87,32 @@
 
   <!-- update the core fontawesome.js file -->
   <script defer src="assets/fontawesome/js/fontawesome.js"></script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Reymart Jay Gonato",
+    "url": "https://rjgonato.com",
+    "image": "https://rjgonato.com/assets/img/rj45.png",
+    "description": "Full-Stack Web Developer specializing in React, Firebase, and Node.js",
+    "jobTitle": "Full-Stack Developer",
+    "email": "rjay.gonato19@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ormoc City",
+      "addressRegion": "Leyte",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/rjgonato",
+      "https://github.com/rjgonato",
+      "https://twitter.com/rjgonato"
+    ],
+    "knowsAbout": ["React", "React Native", "Firebase", "Node.js", "JavaScript", "HTML5", "CSS3", "PHP", "Web Development", "Full-Stack Development"]
+  }
+  </script>
 
   <style>
     .text-csize {
@@ -127,9 +203,18 @@
           <h1 class="hero-title mb-4">Hello, I am RJ
           </h1>
           <p class="hero-subtitle"><span class="typed"
-              data-typed-items="A Daddy, A mySalvanos App Developer, A Developer, A Designer, A Freelancer, A Bug Hunter, A Server Admin, "></span>
+              data-typed-items="Full-Stack Developer, React Specialist, Node.js Expert, Firebase Specialist, Web Developer"></span>
           </p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <p class="hero-description">
+            I build scalable, modern web applications with React, Node.js, and Firebase. With 5+ years of experience, I
+            specialize in creating high-performance applications that solve real-world problems. Currently open for
+            full-time opportunities.
+          </p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-secondary">Let's Talk</a>
+          </div>
         </div>
       </div>
     </div>
@@ -217,19 +302,25 @@
                         About me
                       </h5>
                     </div>
-                    <p class="lead">
-                      Hello! My name is <b>Reymart Jay Gonato</b>, and I'm a Leyte-based freelancer since 2015. If I'm
-                      not freelancing at some of Leyte's finest digital agencies,
-                      I'm working remotely on projects for clients all over the world.
+                    <p>
+                      I'm a passionate full-stack developer from Ormoc City, Philippines, with 9+ years of experience
+                      building scalable web applications. I specialize in modern JavaScript frameworks and cloud
+                      technologies.
                     </p>
-                    <p class="lead">
-                      I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to
-                      PHP, Content Management Systems.
+                    <p>
+                      I'm not just a developer, I'm a problem solver. I take pride in writing clean, maintainable code
+                      and delivering solutions that exceed expectations. My journey from learning to becoming a
+                      developer has taught me the value of continuous learning and adaptation.
                     </p>
-                    <p class="lead">
+                    <p>
+                      When I'm not coding, you'll find me contributing to open-source projects, exploring new
+                      technologies, or helping other developers grow their skills. I'm currently seeking a full-time
+                      position where I can make a significant impact on a team and product.
+                    </p>
+                    <!-- <p class="lead">
                       Visit my <a href="https://www.linkedin.com/in/rjgonato/" target="_blank"><b>LinkedIn</b></a>
                       profile for more details or just contact me.
-                    </p><br>
+                    </p><br> -->
 
                     <div class="title-box-2">
                       <h5 class="title-left">
@@ -1579,7 +1670,7 @@
     <!-- <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)"> -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url()">
     </section>
-    <div class="overlay-mf"></div>
+    <!-- <div class="overlay-mf"></div> -->
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
