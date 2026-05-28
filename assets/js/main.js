@@ -34,7 +34,19 @@
    * Easy on scroll event listener 
    */
   const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
+    el.addEventListener('scroll', listener, { passive: true })
+  }
+
+  const createRafThrottle = (fn) => {
+    let ticking = false
+    return () => {
+      if (ticking) return
+      ticking = true
+      window.requestAnimationFrame(() => {
+        fn()
+        ticking = false
+      })
+    }
   }
 
   /**
@@ -54,8 +66,9 @@
       }
     })
   }
+  const onNavScroll = createRafThrottle(navbarlinksActive)
   window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+  onscroll(document, onNavScroll)
 
   /**
    * Scrolls to an element with header offset
@@ -87,8 +100,9 @@
         selectHeader.classList.remove('header-scrolled')
       }
     }
+    const onHeaderScroll = createRafThrottle(headerScrolled)
     window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
+    onscroll(document, onHeaderScroll)
   }
 
   /**
@@ -103,8 +117,9 @@
         backtotop.classList.remove('active')
       }
     }
+    const onBackToTopScroll = createRafThrottle(toggleBacktotop)
     window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
+    onscroll(document, onBackToTopScroll)
   }
 
   /**
@@ -175,44 +190,53 @@
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  const hasPortfolioLightbox = select('.portfolio-lightbox')
+  if (hasPortfolioLightbox) {
+    GLightbox({
+      selector: '.portfolio-lightbox'
+    })
+  }
 
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  const testimonialsSlider = select('.testimonials-slider')
+  if (testimonialsSlider) {
+    new Swiper('.testimonials-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    })
+  }
 
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  const portfolioDetailsSlider = select('.portfolio-details-slider')
+  if (portfolioDetailsSlider) {
+    new Swiper('.portfolio-details-slider', {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    })
+  }
 
   /**
    * Preloader
