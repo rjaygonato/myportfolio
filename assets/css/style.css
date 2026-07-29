@@ -976,6 +976,8 @@ button:focus-visible,
   backface-visibility: hidden;
   background-color: #fff;
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .work-box:hover img {
@@ -1022,6 +1024,7 @@ button:focus-visible,
 }
 
 .work-content {
+  width: 100%;
   padding: 1rem 3% 1rem 4%;
 }
 
