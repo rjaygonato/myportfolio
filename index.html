@@ -5,22 +5,28 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>RJ Gonato - Full-Stack Web Developer | React, Firebase, Node.js</title>
-  <meta
-    content="Full-Stack Web Developer specializing in React, Firebase, Node.js, and scalable web applications. Available for full-time roles. View RJ Gonato's portfolio and projects."
-    name="description">
-  <meta content="RJ Gonato, Full-Stack Developer, React Developer, Web Developer, Firebase, Node.js, Portfolio"
-    name="keywords">
+  <title>Reymart Jay Gonato (RJ) | Full-Stack Web & Mobile Developer for Hire</title>
+  <meta name="description" content="Hire Reymart Jay Gonato (RJ), a Filipino full-stack web and mobile developer with 11+ years of experience in PHP, Next.js, React, React Native, POS, ERP and custom business applications. Available for remote roles and freelance projects worldwide.">
   <!-- <meta http-equiv="refresh" content="260"> -->
 
   <!-- Open Graph (Facebook Preview) -->
-  <meta property="og:title" content="RJ Gonato - Full-Stack Web Developer">
+  <meta property="og:title" content="Reymart Jay Gonato (RJ) | Full-Stack Developer for Hire">
   <meta property="og:description"
-    content="Full-Stack Developer specializing in React, Firebase, and scalable web apps.">
-  <meta property="og:image" content="assets/img/RJGONATO_26.png">
+    content="Filipino full-stack web and mobile developer building websites, mobile apps, POS, ERP, and business software. Open to local and international opportunities.">
+  <meta property="og:image" content="https://rjaygonato.github.io/myportfolio/assets/img/RJGONATO_26.png">
   <meta property="og:url" content="https://rjaygonato.github.io/myportfolio/">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#161616">
+
+  <link rel="canonical" href="https://rjaygonato.github.io/myportfolio/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Reymart Jay Gonato">
+  <meta property="og:site_name" content="Reymart Jay Gonato Portfolio">
+  <meta property="og:locale" content="en_PH">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reymart Jay Gonato (RJ) | Full-Stack Developer for Hire">
+  <meta name="twitter:description" content="Filipino full-stack web and mobile developer available for remote employment and freelance software projects worldwide.">
+  <meta name="twitter:image" content="https://rjaygonato.github.io/myportfolio/assets/img/RJGONATO_26.png">
 
   <!-- Favicons -->
   <link href="assets/img/letter-r.png" rel="icon">
@@ -90,33 +96,26 @@
       font-size: 0.8em;
       /* Fontawesome size custom */
     }
+
+    /* FAQ: individual expandable cards */
+    #faq .faq-list { display: grid; gap: 14px; }
+    #faq .faq-card { background: #fff; border: 1px solid #e7e9ef; border-radius: 14px; overflow: hidden; box-shadow: 0 5px 22px rgba(15, 23, 42, .045); transition: border-color .2s ease, box-shadow .2s ease; }
+    #faq .faq-card[open] { border-color: #a9b5ca; box-shadow: 0 10px 30px rgba(15, 23, 42, .085); }
+    #faq .faq-question { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 24px; cursor: pointer; color: #1b2638; font-size: 1.05rem; line-height: 1.5; font-weight: 650; list-style: none; }
+    #faq .faq-question::-webkit-details-marker { display: none; }
+    #faq .faq-question::marker { content: ''; }
+    #faq .faq-question:hover { background: #f8fafc; }
+    #faq .faq-question:focus-visible { outline: 3px solid #3569dc; outline-offset: -4px; border-radius: 14px; }
+    #faq .faq-chevron { flex: 0 0 32px; width: 32px; height: 32px; border-radius: 50%; background: #f1f4f8; display: grid; place-items: center; transition: transform .2s ease, background .2s ease; }
+    #faq .faq-chevron::after { content: ''; display: block; width: 9px; height: 9px; border-right: 2px solid #334155; border-bottom: 2px solid #334155; transform: translateY(-2px) rotate(45deg); }
+    #faq .faq-card[open] .faq-chevron { transform: rotate(180deg); background: #e5edff; }
+    #faq .faq-answer { padding: 0 24px 22px; color: #475569; font-size: 1rem; line-height: 1.75; }
+    #faq .faq-answer p { margin: 0; }
+    @media (max-width: 576px) { #faq .faq-question { padding: 18px; font-size: 1rem; } #faq .faq-answer { padding: 0 18px 18px; } }
   </style>
 
   <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Reymart Jay Gonato",
-    "url": "https://rjgonato.com",
-    "image": "https://rjgonato.com/assets/img/rj45.png",
-    "description": "Full-Stack Web Developer specializing in React, Firebase, and Node.js",
-    "jobTitle": "Full-Stack Developer",
-    "email": "rjay.gonato19@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ormoc City",
-      "addressRegion": "Leyte",
-      "addressCountry": "PH"
-    },
-    "sameAs": [
-      "https://linkedin.com/in/rjgonato",
-      "https://github.com/rjgonato",
-      "https://twitter.com/rjgonato"
-    ],
-    "knowsAbout": ["React", "React Native", "Firebase", "Node.js", "JavaScript", "HTML5", "CSS3", "PHP", "Web Development", "Full-Stack Development"]
-  }
-  </script>
+  
 
   <style>
     .text-csize {
@@ -195,6 +194,78 @@
   * Author: RJ GONATO
   * Based : Ph
   ======================================================== -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://rjaygonato.github.io/myportfolio/#person",
+      "name": "Reymart Jay Gonato",
+      "alternateName": [
+        "RJ Gonato",
+        "RJ"
+      ],
+      "url": "https://rjaygonato.github.io/myportfolio/",
+      "image": "https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png",
+      "jobTitle": "Full-Stack Web and Mobile Developer",
+      "description": "Filipino full-stack developer with 11+ years of experience in web and mobile development, custom business software, POS, inventory and ERP solutions. Open to local and international remote opportunities.",
+      "email": "mailto:rjay.gonato19@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ormoc City",
+        "addressRegion": "Leyte",
+        "addressCountry": "PH"
+      },
+      "knowsAbout": [
+        "PHP",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "React Native",
+        "Expo",
+        "Node.js",
+        "MySQL",
+        "PostgreSQL",
+        "Firebase",
+        "WordPress",
+        "Shopify",
+        "POS software",
+        "Inventory management",
+        "ERP development"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/rjgonato",
+        "https://github.com/rjaygonato"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rjaygonato.github.io/myportfolio/#website",
+      "url": "https://rjaygonato.github.io/myportfolio/",
+      "name": "Reymart Jay Gonato | Developer Portfolio",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://rjaygonato.github.io/myportfolio/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://rjaygonato.github.io/myportfolio/#webpage",
+      "url": "https://rjaygonato.github.io/myportfolio/",
+      "name": "Reymart Jay Gonato (RJ) - Full-Stack Web & Mobile Developer",
+      "isPartOf": {
+        "@id": "https://rjaygonato.github.io/myportfolio/#website"
+      },
+      "mainEntity": {
+        "@id": "https://rjaygonato.github.io/myportfolio/#person"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+  </script>
 </head>
 
 <body>
@@ -203,7 +274,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">My Portfolio <span style="font-size: small;">by RJ GONATO</span></a></h1>
+      <div class="logo"><a href="index.html">My Portfolio <span style="font-size: small;">by RJ GONATO</span></a></div>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img loading="lazy" decoding="async" src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -235,7 +306,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Hire Me</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -258,20 +330,17 @@
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Hello, I am RJ
-          </h1>
+          <h1 class="hero-title mb-4">Reymart Jay Gonato (RJ)</h1>
           <p class="hero-subtitle"><span class="typed"
-              data-typed-items="Full-Stack Developer, React Specialist, Node.js Expert, Firebase Specialist, Web Developer"></span>
+              data-typed-items="Full-Stack Web Developer, Mobile App Developer, PHP & Next.js Developer, Custom Software Developer, Remote Developer for Hire"></span>
           </p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
           <p class="hero-description">
-            I build scalable, modern web applications with React, Node.js, and Firebase. With 11+ years of experience, I
-            specialize in creating high-performance applications that solve real-world problems. Currently open for
-            full-time opportunities.
+            I'm Reymart Jay Gonato (RJ), a full-stack web and mobile developer based in the Philippines with 11+ years of experience. I build custom websites, web applications, mobile apps, POS systems, inventory platforms, and ERP solutions using PHP, Next.js, React, React Native, and modern databases. Available for local and international remote jobs, contracts, and freelance projects.
           </p>
           <div class="hero-buttons">
             <a href="#work" class="btn-primary">View My Work</a>
-            <a href="#contact" class="btn-secondary">Let's Talk</a>
+            <a href="#contact" class="btn-secondary">Hire Me / Let's Talk</a>
           </div>
         </div>
       </div>
@@ -322,7 +391,7 @@
                     <div class="skill-group">
                       <h4>Frontend Development</h4>
                       <div class="tags">
-                        <span>HTML5</span>
+                        <span>React</span><span>Next.js</span><span>TypeScript</span><span>HTML5</span>
                         <span>CSS3</span>
                         <span>JavaScript</span>
                         <span>Responsive Design</span>
@@ -332,7 +401,7 @@
                     <div class="skill-group">
                       <h4>Backend & Systems</h4>
                       <div class="tags">
-                        <span>PHP</span>
+                        <span>PHP</span><span>Node.js</span><span>MySQL</span><span>PostgreSQL</span><span>Prisma ORM</span>
                         <span>System Administration</span>
                         <span>Basic Cybersecurity</span>
                       </div>
@@ -341,7 +410,7 @@
                     <div class="skill-group">
                       <h4>Mobile Development</h4>
                       <div class="tags">
-                        <span>React Native</span>
+                        <span>React Native</span><span>Expo</span>
                         <span>Cross-Platform Apps</span>
                       </div>
                     </div>
@@ -373,21 +442,9 @@
                         About me
                       </h5>
                     </div>
-                    <p>
-                      I'm a passionate full-stack developer from Ormoc City, Philippines, with 11+ years of experience
-                      building scalable web applications. I specialize in modern JavaScript frameworks and cloud
-                      technologies.
-                    </p>
-                    <p>
-                      I'm not just a developer, I'm a problem solver. I take pride in writing clean, maintainable code
-                      and delivering solutions that exceed expectations. My journey from learning to becoming a
-                      developer has taught me the value of continuous learning and adaptation.
-                    </p>
-                    <p>
-                      When I'm not coding, you'll find me contributing to open-source projects, exploring new
-                      technologies, or helping other developers grow their skills. I'm currently seeking a full-time
-                      position where I can make a significant impact on a team and product.
-                    </p>
+                    <p>I'm Reymart Jay Gonato (RJ), a Filipino full-stack web and mobile developer with 11+ years of experience building and maintaining websites, mobile applications, and business software. I work with PHP, JavaScript, TypeScript, Next.js, React, React Native, MySQL, PostgreSQL, and Firebase.</p>
+                    <p>I develop practical software solutions for real operational needs, including point-of-sale and inventory systems, emergency assistance applications, custom websites, and internal business platforms. Featured work includes Qwenta POS, mySalvanos, and Shell Inventory.</p>
+                    <p>I'm open to full-time remote employment, part-time development work, and freelance contracts with businesses and teams in the Philippines and internationally. I can help with new applications, existing codebases, integrations, performance improvements, and ongoing maintenance.</p>
                     <!-- <p class="lead">
                       Visit my <a href="https://www.linkedin.com/in/rjgonato/" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b></a>
                       profile for more details or just contact me.
@@ -401,7 +458,19 @@
                     <p class="lead">
                       <img loading="lazy" decoding="async" src="https://ghchart.rshah.org/rjaygonato"
                         alt="rjaygonato's Github chart" style="max-width: 100%; height: auto;" />
-                    </p><br>
+                    </p>
+                    <!-- Professional badges: add future badges as additional items inside this grid. -->
+                    <div class="title-box-2 mt-4">
+                      <h5 class="title-left">Professional Badges &amp; Recognitions</h5>
+                    </div>
+                    <div class="d-flex flex-wrap align-items-start gap-3 mt-3 mb-4" aria-label="Professional badges and recognitions">
+                      <div class="text-center" style="width:180px; max-width:100%;">
+                        <img src="assets/img/dict-cyberpro-badge.png"
+                          alt="DICT Cybersecurity Professionals Portal recognition badge for Reymart Jay Gonato, Level 2 Intermediate, recognized 7 October 2026"
+                          width="180" height="180" loading="lazy" decoding="async"
+                          style="display:block; width:180px; max-width:100%; height:auto; object-fit:contain; border-radius:8px;" />
+                      </div>
+                    </div>
                     <!-- <div class="title-box-2">
                       <h5 class="title-left">
                         Certificates
@@ -926,7 +995,7 @@
               <span class="project-badge">Ongoing Project</span>
               <a href="https://shell-inventory.vercel.app">
                 <div class="work-img">
-                  <img loading="lazy" decoding="async" src="assets/img/shell.png" alt="" class="img-fluid">
+                  <img loading="lazy" decoding="async" src="assets/img/shell.png" alt="Shell Inventory role-based inventory management system" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -956,7 +1025,7 @@
                 Deployed</span>
               <a href="https://4bsolarpower.com/" target="_blank" rel="noopener noreferrer">
                 <div class="work-img">
-                  <img loading="lazy" decoding="async" src="assets/img/4bsolarpower.png" alt="" class="img-fluid">
+                  <img loading="lazy" decoding="async" src="assets/img/4bsolarpower.png" alt="4B Solar Power business website developed by RJ Gonato" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -985,7 +1054,7 @@
                 Deployed</span> -->
               <a href="https://himayabeach.vercel.app/">
                 <div class="work-img">
-                  <img loading="lazy" decoding="async" src="assets/img/qwentapos.png" alt="" class="img-fluid">
+                  <img loading="lazy" decoding="async" src="assets/img/qwentapos.png" alt="Qwenta POS sales and inventory management system" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -1072,7 +1141,7 @@
             <div class="work-box">
               <a href="https://mysalvanosapp.expo.app/" target="_blank" rel="noopener noreferrer">
                 <div class="work-img">
-                  <img loading="lazy" decoding="async" src="assets/img/mysalvanosv1.1.png" alt="" class="img-fluid">
+                  <img loading="lazy" decoding="async" src="assets/img/mysalvanosv1.1.png" alt="mySalvanos emergency assistance app built by Reymart Jay Gonato" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -1126,7 +1195,7 @@
             <div class="work-box">
               <a href="assets/img/hrms.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img loading="lazy" decoding="async" src="assets/img/hrms.png" alt="" class="img-fluid">
+                  <img loading="lazy" decoding="async" src="assets/img/hrms.png" alt="HRMS human resources management web application" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -1890,6 +1959,46 @@
     <!-- End Blog Section -->
 
     <!-- ======= Contact Section ======= -->
+
+    <!-- Accessible, crawlable FAQ accordion: answers remain in HTML without JavaScript. -->
+    <section id="faq" class="services-mf pt-5 route" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="title-box text-center">
+          <h2 id="faq-title" class="title-a">Frequently Asked Questions</h2>
+          <p class="subtitle-a">Quick answers about my experience, skills, projects, and availability</p>
+          <div class="line-mf"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 mx-auto faq-list">
+          <details class="faq-card" open>
+            <summary class="faq-question"><span>Who is Reymart Jay Gonato (RJ)?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Reymart Jay Gonato, also known as RJ Gonato, is a full-stack web and mobile developer based in the Philippines with over 11 years of experience creating websites, web applications, mobile apps, and business software.</p></div>
+          </details>
+          <details class="faq-card" >
+            <summary class="faq-question"><span>Is Reymart Jay Gonato available for remote employment?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes. RJ is open to full-time and part-time remote developer roles with companies in the Philippines and internationally, as well as contract and freelance work.</p></div>
+          </details>
+          <details class="faq-card" >
+            <summary class="faq-question"><span>What technologies does RJ Gonato work with?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>His technologies include PHP, JavaScript, TypeScript, React, Next.js, React Native, Expo, Node.js, MySQL, PostgreSQL, Prisma, Firebase, WordPress, and Shopify.</p></div>
+          </details>
+          <details class="faq-card" >
+            <summary class="faq-question"><span>What types of projects can RJ develop?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>RJ builds business websites, custom web applications, cross-platform mobile applications, point-of-sale systems, inventory management tools, ERP systems, and integrations.</p></div>
+          </details>
+          <details class="faq-card" >
+            <summary class="faq-question"><span>What has Reymart Jay Gonato built?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Featured projects include Qwenta POS for retail and hospitality operations, the mySalvanos emergency assistance app, Shell Inventory, and client business websites such as 4B Solar Power.</p></div>
+          </details>
+          <details class="faq-card" >
+            <summary class="faq-question"><span>How can I hire or contact RJ Gonato?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Use the contact form on this portfolio or email rjay.gonato19@gmail.com. Include the role or project scope, expected timeline, and preferred working arrangement.</p></div>
+          </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)"> -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url()">
     </section>
@@ -1898,11 +2007,11 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
+            <div class="box-shadow-full">
               <div class="row">
                 <div class="col-md-6">
                   <div class="title-box-2">
-                    <h5 class="title-left">Send Message Us</h5>
+                    <h5 class="title-left">Hire Me or Discuss a Project</h5>
                   </div>
 
                   <form action="https://formsubmit.co/43aee27504c31ec7be0298778db83ec3" method="POST">
@@ -1945,13 +2054,12 @@
                 <div class="col-md-6">
                   <div class="title-box-2 pt-4 pt-md-0">
                     <h5 class="title-left">
-                      Get in Touch
+                      Contact Reymart Jay Gonato
                     </h5>
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      Have a project in mind? Share your requirements and I’ll get back to you shortly.
-                      Let’s build something that works for you.
+                      Hiring a developer or planning a project? I’m available for remote positions, international contracts, and freelance web or mobile development. Share the role or project requirements, and let’s discuss how I can help.
                     </p>
                     <ul class="list-ico">
                       <li><span class="bi bi-geo-alt"></span> Ormoc City, Philippines 6541</li>
@@ -1966,7 +2074,7 @@
                       </li>
                       <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li> -->
                       <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li> -->
-                      <li><a href="https://www.linkedin.com/in/rjgonato" target="_blank" rel="noopener noreferrer"><span
+                      <li><a aria-label="LinkedIn profile of Reymart Jay Gonato" href="https://www.linkedin.com/in/rjgonato" target="_blank" rel="noopener noreferrer"><span
                             class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
                     </ul>
                   </div>
@@ -1995,7 +2103,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
             -->
-              Maintained by <a href="www.linkedin.com/in/rjgonato">RJ GONATO</a>
+              Maintained by <a href="https://www.linkedin.com/in/rjgonato">RJ GONATO</a>
             </div>
           </div>
         </div>
@@ -2017,6 +2125,9 @@
 
   <!-- Template Main JS File -->
   <script defer src="assets/js/main.js"></script>
+
+  
+
 
 </body>
 
