@@ -14,6 +14,9 @@
   <meta property="og:description"
     content="Leyte-based freelance web and mobile developer building business websites, POS, ERP and mobile apps for clients in the Philippines and worldwide.">
   <meta property="og:image" content="https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png">
+  <meta property="og:image:secure_url" content="https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Portrait of Reymart Jay Gonato (RJ), freelance web and mobile developer in Isabel, Leyte, Philippines">
   <meta property="og:url" content="https://rjaygonato.github.io/myportfolio/">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#161616">
@@ -21,6 +24,7 @@
   <meta name="geo.placename" content="Isabel, Leyte, Philippines">
 
   <link rel="canonical" href="https://rjaygonato.github.io/myportfolio/">
+  <link rel="image_src" href="https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Reymart Jay Gonato">
   <meta property="og:site_name" content="Reymart Jay Gonato Portfolio">
@@ -29,6 +33,7 @@
   <meta name="twitter:title" content="Reymart Jay Gonato (RJ) | Freelance Developer in Leyte">
   <meta name="twitter:description" content="Freelance web and mobile developer based in Isabel, Leyte, Philippines. Available for local projects and remote work worldwide.">
   <meta name="twitter:image" content="https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png">
+  <meta name="twitter:image:alt" content="Reymart Jay Gonato (RJ), freelance web and mobile developer in Isabel, Leyte">
 
   <!-- Favicons -->
   <link href="assets/img/letter-r.png" rel="icon">
@@ -210,7 +215,14 @@
         "RJ"
       ],
       "url": "https://rjaygonato.github.io/myportfolio/",
-      "image": "https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://rjaygonato.github.io/myportfolio/#profile-photo",
+        "url": "https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png",
+        "contentUrl": "https://rjaygonato.github.io/myportfolio/assets/img/rjgonato26.png",
+        "caption": "Reymart Jay Gonato (RJ) — freelance web and mobile developer in Isabel, Leyte, Philippines",
+        "representativeOfPage": true
+      },
       "jobTitle": "Freelance Full-Stack Web and Mobile Developer",
       "description": "Freelance full-stack web and mobile developer based in Isabel, Leyte, Philippines, with 11+ years of experience in websites, business software, POS, inventory and ERP systems. Available for local and international projects.",
       "email": "mailto:rjay.gonato19@gmail.com",
@@ -278,6 +290,9 @@
       },
       "mainEntity": {
         "@id": "https://rjaygonato.github.io/myportfolio/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://rjaygonato.github.io/myportfolio/#profile-photo"
       },
       "inLanguage": "en"
     }
@@ -380,7 +395,7 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img loading="lazy" decoding="async" src="assets/img/rjgonato26.png" width="190"
+                        <img loading="eager" decoding="async" fetchpriority="high" src="assets/img/rjgonato26.png" width="190"
                           class="img-fluid rounded b-shadow-a" alt="Reymart Jay Gonato (RJ), freelance full-stack web and mobile developer in Leyte, Philippines">
                       </div>
                     </div>
