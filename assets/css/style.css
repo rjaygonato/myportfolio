@@ -426,6 +426,152 @@ button:focus-visible,
   }
 }
 
+/* Homepage hero skeleton */
+#preloader.hero-skeleton {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 90px 24px 32px;
+  background: #111 url("../img/black-wave-grid.jpg") center / cover no-repeat;
+}
+
+#preloader.hero-skeleton::before {
+  content: none;
+}
+
+#preloader.hero-skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.hero-skeleton-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: min(900px, 100%);
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-skeleton-line,
+.hero-skeleton-button {
+  display: block;
+  max-width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.10) 20%,
+      rgba(255, 255, 255, 0.24) 40%,
+      rgba(255, 255, 255, 0.10) 60%);
+  background-size: 220% 100%;
+  animation: hero-skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+.hero-skeleton-title {
+  width: 680px;
+  height: clamp(48px, 7vw, 76px);
+  margin-bottom: 4px;
+}
+
+.hero-skeleton-kicker {
+  width: 600px;
+  height: 25px;
+}
+
+.hero-skeleton-subtitle {
+  width: 430px;
+  height: 38px;
+  margin: 8px 0 20px;
+}
+
+.hero-skeleton-copy {
+  width: 820px;
+  height: 18px;
+}
+
+.hero-skeleton-copy-short {
+  width: 720px;
+}
+
+.hero-skeleton-copy-shorter {
+  width: 520px;
+}
+
+.hero-skeleton-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.hero-skeleton-button {
+  width: 180px;
+  height: 50px;
+}
+
+@keyframes hero-skeleton-shimmer {
+  from {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #preloader.hero-skeleton {
+    padding-top: 76px;
+  }
+
+  .hero-skeleton-content {
+    gap: 13px;
+  }
+
+  .hero-skeleton-title {
+    width: 92%;
+    height: 48px;
+  }
+
+  .hero-skeleton-kicker {
+    width: 86%;
+    height: 20px;
+  }
+
+  .hero-skeleton-subtitle {
+    width: 68%;
+    height: 28px;
+    margin-bottom: 14px;
+  }
+
+  .hero-skeleton-copy {
+    height: 15px;
+  }
+
+  .hero-skeleton-actions {
+    width: 100%;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .hero-skeleton-button {
+    width: min(42vw, 170px);
+    height: 46px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-skeleton-line,
+  .hero-skeleton-button {
+    animation: none;
+  }
+}
+
 /*------/ Button /------*/
 .button {
   display: inline-block;
