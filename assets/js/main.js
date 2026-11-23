@@ -239,6 +239,48 @@
   }
 
   /**
+   * Scroll reveal animations
+   * Reveals each section's content with a small stagger as it enters the viewport.
+   * The .reveal class is added here, so content stays visible if JS is disabled.
+   */
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const revealItems = []
+
+  if (!prefersReducedMotion) {
+    const revealContainers = select('main section > .container, #hero .hero-content .container, main > .container, footer .container', true)
+
+    revealContainers.forEach(container => {
+      const blocks = [...container.children].filter(child =>
+        !['BR', 'SCRIPT', 'STYLE', 'NOSCRIPT'].includes(child.tagName)
+      )
+
+      blocks.forEach((block, index) => {
+        block.classList.add('reveal')
+        block.style.setProperty('--reveal-delay', `${Math.min(index, 5) * 90}ms`)
+        revealItems.push(block)
+      })
+    })
+  }
+
+  if (revealItems.length) {
+    const revealVisible = () => {
+      for (let i = revealItems.length - 1; i >= 0; i--) {
+        const item = revealItems[i]
+        // Reveal once the block is within (or has scrolled past) the viewport.
+        if (item.getBoundingClientRect().top < window.innerHeight - 60) {
+          item.classList.add('is-visible')
+          revealItems.splice(i, 1)
+        }
+      }
+    }
+    const onRevealScroll = createRafThrottle(revealVisible)
+
+    revealVisible()
+    window.addEventListener('load', revealVisible)
+    onscroll(document, onRevealScroll)
+  }
+
+  /**
    * Preloader
    */
   let preloader = select('#preloader');
